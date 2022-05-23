@@ -250,3 +250,5 @@ def delete_item(book_id):
 @app.get('/book/users/<int:user_id>')
 def get_book_by_user_id(user_id):
     return make_response({"books":[book.to_dict() for book in User.query.all(user_id).books]},200)
+
+# good one to learn 
